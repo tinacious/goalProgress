@@ -2,7 +2,7 @@
 
 This plugin allows you to create an animated progress bar using jQuery. Just fill in the required input and the plugin calculates the progress of your goal and animates the bar. You can specify text to put before and after the amount raised.
 
-![Screenshot of the Tinacious Goal Progress plugin](https://raw.github.com/tinacious/goalProgress/master/fakeimg-screenshot.png)
+![Screenshot of the Tinacious Goal Progress plugin](https://github.com/tinacious/goalProgress/blob/master/screenshot.png)
 
 ## Usage
 
