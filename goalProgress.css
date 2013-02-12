@@ -13,7 +13,6 @@ div.progressBar {
 	display: block;
 	overflow: hidden;
 	width: 20px;
-	height: 1.8em;
 }
 span.goalAmount {
 	display: none;
