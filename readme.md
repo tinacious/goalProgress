@@ -4,7 +4,7 @@ This plugin allows you to create an animated progress bar using jQuery. Just fil
 
 ![Screenshot of the Tinacious Goal Progress plugin](https://github.com/tinacious/goalProgress/blob/master/screenshot.png?raw=true)
 
-Screenshot not enough? [Click here to see the live demo](http://christinaholly.com/sandbox/plugins/goalProgress/).
+Screenshot not enough? [Click here to see the live demo](http://tinacious.github.io/goalProgress/).
 
 ## Usage
 
