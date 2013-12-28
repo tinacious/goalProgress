@@ -25,3 +25,5 @@ Screenshot not enough? [Click here to see the live demo](http://tinacious.github
     ```
 
 That [demo link](http://christinaholly.com/sandbox/plugins/goalProgress/) again.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tinacious/goalprogress/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

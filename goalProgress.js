@@ -6,7 +6,7 @@
  *  http://tinaciousdesign.com
  *
  */
-(function($){
+!function($){
 	$.fn.extend({
 		goalProgress: function(options) {
 			var defaults = {
@@ -14,7 +14,10 @@
 				currentAmount: 50,
 				speed: 1000,
 				textBefore: '',
-				textAfter: ''
+				textAfter: '',
+				milestoneNumber: 70,
+				milestoneClass: 'almost-full',
+				callback: function() {}
 			}
 
 			var options = $.extend(defaults, options);
@@ -28,9 +31,12 @@
 				// Calculate size of the progress bar
 				var percentage = (currentAmountParsed / goalAmountParsed) * 100;
 
+				var milestoneNumberClass = (percentage > defaults.milestoneNumber) ? ' ' + defaults.milestoneClass : ''
+
 				// Generate the HTML
-				var progressBar = '<div class="progressBar">' + defaults.textBefore + currentAmountParsed + defaults.textAfter + '</div>';
-				var progressBarWrapped = '<div class="goalProgress">' + progressBar + '</div>';
+ 				var progressBar = '<div class="progressBar">' + defaults.textBefore + currentAmountParsed + defaults.textAfter + '</div>';
+
+ 				var progressBarWrapped = '<div class="goalProgress' + milestoneNumberClass + '">' + progressBar + '</div>';
 
 				// Append to the target
 				obj.append(progressBarWrapped);
@@ -44,8 +50,12 @@
 				});
 
 				// Animate!
-				rendered.animate({width: percentage +'%'}, defaults.speed);				
+				rendered.animate({width: percentage +'%'}, defaults.speed, defaults.callback);
+
+				if(typeof callback == 'function') {
+					callback.call(this)
+				}
 			});
 		}
 	});
-})(jQuery);
+}(window.jQuery);
