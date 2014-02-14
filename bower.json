@@ -3,7 +3,6 @@
   "description": "Animated progress bar using jQuery to show how close you are to reaching your goal.",
   "version": "1.0",
   "ignore": [
-    "goalProgress.min.js",
     "index.html",
     "readme.md",
     "screenshot.png"
