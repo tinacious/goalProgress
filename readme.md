@@ -8,6 +8,13 @@ Screenshot not enough? [Click here to see the live demo](http://tinacious.github
 
 ## Usage
 
+This repository can be installed using Bower:
+
+```bash
+bower install goalProgress --save-dev
+grunt bower-install
+```
+
 1. Reference `goalProgress.css` and either `goalProgress.min.js` or `goalProgress.js`.
 
 2. Put an empty element on the page: `<div id="sample_goal"></div>`
