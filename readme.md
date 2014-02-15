@@ -11,7 +11,7 @@ Screenshot not enough? [Click here to see the live demo](http://tinacious.github
 This repository can be installed using Bower:
 
 ```bash
-bower install goalProgress --save-dev
+bower install goalProgress --save
 grunt bower-install
 ```
 
