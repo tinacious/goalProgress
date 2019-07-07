@@ -1,51 +1,95 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Animated Goal Progress jQuery plugin by Tinacious Design</title>
-	<link rel="stylesheet" type="text/css" href="http://christinaholly.com/sandbox/demo.css">
-	<!-- plugin files -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="goalProgress.css" />
-	<script type="text/javascript" src="goalProgress.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('#sample_goal').goalProgress({
-				goalAmount: 600,
-				currentAmount: 400,
-				textBefore: '$',
-				textAfter: ' raised.'
-			});
-		});
-	</script>
+  <meta charset="UTF-8">
+  <title>Animated Goal Progress jQuery plugin by Tinacious Design</title>
+  <link rel="stylesheet" type="text/css" href="https://gistcdn.githack.com/tinacious/d89f3daf0e4555a2dc23fd3beb14e179/raw/5bd576497143efb5c1374cc3a02fa7e9191bc678/plugin-styles.css">
+  <!-- plugin files -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <style>
+    /* demo theme styles */
+    .container {
+      max-width: 600px;
+    }
+
+    .site-header .logo {
+      width: 100%;
+    }
+
+    .logo span,
+    .logo img {
+      display: block;
+      float: left;
+    }
+
+    .logo span {
+      padding: 10px 0 0 10px;
+    }
+
+    .site-header {
+      padding: 5px 0;
+      z-index: 10;
+    }
+
+    @media (max-width: 767px) {
+      .site-header .logo span {
+        display: block;
+      }
+    }
+
+
+    .demo-wrapper {
+      margin-bottom: 50px;
+      line-height: 1.6;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="goalProgress.css" />
+  <script type="text/javascript" src="goalProgress.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#sample_goal').goalProgress({
+        goalAmount: 600,
+        currentAmount: 400,
+        textBefore: '$',
+        textAfter: ' raised.'
+      });
+    });
+  </script>
 </head>
+
 <body>
-	<div id="header">
-		<div class="content">
-			<a href="http://tinaciousdesign.com"><img src="http://tinaciousdesign.com/images/td-logo.png" class="logo" alt="Tinacious Design logo"><img class="text" src="http://tinaciousdesign.com/images/td-text.png" alt="Tinacious Design logo" title="Tinacious Design"></a>
-			<p>
-				web dev sandbox &amp; demos
-			</p>
-		</div>
-	</div>
-	<div class="content">
-		<div class="container">
-			<h1>Animated Goal Progress Bar jQuery plugin</h1>
-			<p>
-				This plugin allows you to create an animated progress bar using jQuery. Just fill in the required input and the plugin calculates the progress of your goal and animates the bar. You can specify text to put before and after the amount raised.
-			</p>
-			<p>
-				You are welcome to download the plugin and use it in your personal projects provided that you leave the credits in the source code.
-			</p>
-		</div>
-		<div class="container">
-			<div id="sample_goal"></div>
-		</div>
-		<div class="container">
-			<p class="filters">
-				<a href="https://github.com/tinacious/goalProgress" class="button">Download on Github</a>
-			</p>
-		</div>
-	</div>
+  <header id="header" class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="https://tinaciousdesign.com/images/td-logo.png" alt="Tinacious Design logo" width="50">
+        <span><b><a href="https://tinaciousdesign.com/">Tinacious Design</a></b> &ndash; plugin demos</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="site-content">
+    <div class="container">
+      <div class="demo-wrapper">
+        <h1>Animated Goal Progress Bar jQuery plugin</h1>
+        <p>
+          This plugin allows you to create an animated progress bar using jQuery. Just fill in the required input and the
+          plugin calculates the progress of your goal and animates the bar. You can specify text to put before and after
+          the amount raised.
+        </p>
+        <p>
+          You are welcome to download the plugin and use it in your personal projects provided that you leave the credits
+          in the source code.
+        </p>
+      </div>
+
+      <div class="demo-wrapper">
+        <div id="sample_goal"></div>
+      </div>
+
+      <p>
+        <a href="https://github.com/tinacious/goalProgress" class="btn">Download on Github</a>
+      </p>
+    </div>
 </body>
 </html>
