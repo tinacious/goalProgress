@@ -30,6 +30,11 @@
 
 				// Calculate size of the progress bar
 				var percentage = (currentAmountParsed / goalAmountParsed) * 100;
+				
+				// Allows for progress bar to go beyond 100% but still show correct amount raised.
+				if(percentage > 100) {
+				    percentage = 100;	
+				}
 
 				var milestoneNumberClass = (percentage > defaults.milestoneNumber) ? ' ' + defaults.milestoneClass : ''
 
